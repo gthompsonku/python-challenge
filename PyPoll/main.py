@@ -28,7 +28,7 @@ for canidate in canidates:
         winner=canidate
         tally=votes.count(canidate)
 
-#print output
+#print output to terminal
 print("Election Results\n")
 print(f"Total Votes: {len(votes)}\n")
 
@@ -37,6 +37,7 @@ for vote in canidates:
 
 print(f"\nWinner: {winner}")
 
+#print output to new txt file
 output_file=os.path.join("..","/Users/Grant/UCSD Bootcamp/python-challenge/PyPoll","election_summary.txt")
 
 with open(output_file,"w") as file:
